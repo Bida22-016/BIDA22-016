@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WarnerBros.com | Login</title>
+    <link rel="shortcut icon" href="images/forpages/logo.ico" type="image/svg+xml">
+  <style>
+    body {
+      background-color: #181b22;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .login-form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      width: 300px;
+    }
+    
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    
+    .login-form input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .error-message {
+      color: #ff0000;
+      font-size: 12px;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="login-form" onsubmit="return false;">
+      <input type="text" placeholder="Name" id="name" required>
+      <input type="text" placeholder="Surname" id="surname" required>
+      <input type="text" placeholder="Email" id="email" required>
+      <span class="error-message" id="email-error"></span>
+      <input type="text" placeholder="Phone Number" id="phone" required>
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+  <script>
+    document.querySelector('.login-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent form submission
+      
+      // Validate email
+      var emailInput = document.getElementById('email');
+      var emailError = document.getElementById('email-error');
+      
+      if (!emailInput.value.includes('@')) {
+        emailError.textContent = 'Please enter a valid email address.';
+        return;
+      } else {
+        emailError.textContent = '';
+      }
+      
+      // Validate phone number
+      var phoneInput = document.getElementById('phone');
+      if (!/^\d+$/.test(phoneInput.value)) {
+        alert('Please enter a valid phone number.');
+        return;
+      }
+      
+      // Form is valid, proceed with submission or further actions
+      // Add your code here
+      
+      alert('Form submitted successfully!');
+    });
+  </script>
+</body>
+</html>

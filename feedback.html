@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarnerBros.com | Feedback</title>
+    <link rel="shortcut icon" href="images/forpages/logo.ico" type="image/svg+xml">
+    <!--Stylesheet-->
+    <style>
+      .feedback-form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feedback-form h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+  }
+  
+  .feedback-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback-form .form-group {
+    margin-bottom: 30px;
+  }
+  
+  .feedback-form label {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+  }
+  
+  .feedback-form input[type="text"],
+  .feedback-form input[type="email"],
+  .feedback-form select,
+  .feedback-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease-in-out;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .feedback-form input[type="text"]:focus,
+  .feedback-form input[type="email"]:focus,
+  .feedback-form select:focus,
+  .feedback-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .feedback-form select option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .feedback-form button[type="submit"] {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .feedback-form button[type="submit"]:hover {
+    background-color: #0062cc;}
+    .feedback-form {
+        width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      .feedback-form h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #007bff;
+        text-shadow: 1px 1px #ccc;
+      }
+      
+      .feedback-form form {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .feedback-form .form-group {
+        margin-bottom: 30px;
+      }
+      
+      .feedback-form label {
+        font-size: 24px;
+        margin-bottom: 10px;
+        display: block;
+        color: #333;
+      }
+      
+      .feedback-form input[type="text"],
+      .feedback-form input[type="email"],
+      .feedback-form select,
+      .feedback-form textarea {
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.2s ease-in-out;
+        font-size: 18px;
+        color: #333;
+      }
+      
+      .feedback-form input[type="text"]:focus,
+      .feedback-form input[type="email"]:focus,
+      .feedback-form select:focus,
+      .feedback-form textarea:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+      
+      .feedback-form select option {
+        background-color: #fff;
+        color: #333;
+      }
+      
+      .feedback-form button[type="submit"] {
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+      
+      .feedback-form button[type="submit"]:hover {
+        background-color: #0062cc;
+      }
+      
+      .feedback-form button[type="submit"]:focus {
+        outline: none;
+      }
+      
+      .feedback-form button[type="submit"]:active {
+        background-color: #005cbf;
+      }
+      
+      .feedback-form input[type="text"]:hover,
+      .feedback-form input[type="email"]:hover,
+      .feedback-form select:hover,
+      .feedback-form textarea:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      .feedback-form label:hover {
+        text-shadow: 1px 1px #ccc;
+      }    
+    </style>
+</head>
+<body>
+    <div class="feedback-form">
+        <h2>Feedback Form</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+              <option value="">Select a rating</option>
+              <option value="1">1 Star</option>
+              <option value="2">2 Stars</option>
+              <option value="3">3 Stars</option>
+              <option value="4">4 Stars</option>
+              <option value="5">5 Stars</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit Feedback</button>
+          </div>
+        </form>
+      </div>      
+</body>
+</html>
